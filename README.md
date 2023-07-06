@@ -1,0 +1,1 @@
+# kinnovis-api-structure
