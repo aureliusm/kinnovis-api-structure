@@ -2,13 +2,13 @@
 
 Below is the JSON structure for API endpoint that will serve the Frontend (FE) to be able to load correct component with correct data and translations.
 
-- `status` let's the FE know if all went fine and data is good
+- `status` let's the FE know if all went fine and data is good (Success or Error)
 - `locale` let's the FE know what locale was used to generate the response
 - `data` holds an array of fields. Each field has a `type` which let's the FE know which component to load. It also holds a `label` which is translated according to the requested locale. Depending on the type, filters also provide `options` for the FE to be able to load the component. Options have a `value` and a `label` which can also be translated on the BE.
 
 ```
 {
-    "status": "OK",
+    "status": "Success",
     "locale": "en",
     "data": {
         "search": {
